@@ -1,0 +1,197 @@
+html{
+    font-size: 62.5%;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.color-change-3x {
+	        animation: color-change-3x 4s linear infinite alternate both;
+}
+@-webkit-keyframes color-change-3x {
+    0% {
+      background: #f5e76f;
+    }
+    50% {
+      background: #e66e6e;
+    }
+    100% {
+      background: #f7f2f2;
+    }
+  }
+  @keyframes color-change-3x {
+    0% {
+      background: #f7f2f2;
+    }
+    50% {
+      background: #f5e76f;
+    }
+    100% {
+      background: #e66e6e;
+    }
+  }
+#contenedor{
+    max-width: 1200;
+    width: 100%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(50px,auto));
+    grid-template-areas: 
+        " encabezado "
+        " hero "
+        " principal "
+        " pie "
+    ;
+}
+header{
+    grid-area: encabezado;
+    display: flex;
+    padding: 10px;
+    background: rgb(255, 208, 0) ;
+}
+header img {
+    margin-right: auto;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    font-size: 2rem;
+    gap: 2px;
+    color: black;
+}
+nav ul a:hover{
+    background-color: yellow;
+    color: red; 
+}
+#hero{
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+    background-image: url(https://s.studiobinder.com/wp-content/uploads/2018/09/Download-Seinfeld-Scripts-and-Analysis-Header.jpg);
+    background-size:contain;
+}
+#hero h1{
+    font-size: 8rem;
+    color: rgb(14, 13, 13);
+    padding: 5px 10px;
+}
+main{
+    grid-area: principal;
+    
+}
+main div h2 {
+    font-size: 3rem;
+    color: rgb(167, 29, 29);
+}
+main div p{
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+h2{
+    font-size: 3rem;
+    color: rgb(167, 29, 29);
+    margin: 10px o;
+    padding: 10px 0;
+    text-align: center;
+}
+footer{
+    grid-area: pie;
+} 
+
+#inicio{
+    display: flex;
+    padding: 5px;   
+    gap: 5px;
+}
+
+#inicio div {
+    flex-basis: 50%;   
+    background: rgb(245, 245, 145);
+}
+#inicio div ul{
+    display: flex;
+    width: 100%;
+    list-style: none;
+}
+
+#inicio a{
+    text-align: center;
+    display: block;
+    font-size: 1.5rem;
+    color: black;
+    transition: 0.3s;
+}
+#inicio a:hover {
+    background-color: yellow;
+    color: red;
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+}
+#portafolio img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;      
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(1.5);
+   
+}
+footer {
+    display: flex;
+    background-color: black;
+    padding: 50px 20px;
+    margin: 0;
+   
+}
+footer p{
+    font-size: 1.5rem;
+    display: flex;
+    flex-basis: 80%;
+    align-items:center ;
+    color: white;
+}
+footer ul{
+    list-style: none;
+    font-size: 1.5rem;
+    color: white;
+}
+#sinopsis{
+    background-color: beige;
+}
+#actores{
+  display:grid
+}
+#actores p{
+    font-size: 1.5rem;
+    background-color: beige;
+}
+section div h3{
+    font-size: 2.5rem;
+    background-color: beige;
+    gap: 15px;
+}
+@media (max-width: 767px) {
+    #inicio {
+        flex-direction: column;
+    }
+    #footer {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    #galeria {
+        flex-direction: column;
+        justify-content: center;
+    }   
+}
