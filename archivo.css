@@ -120,12 +120,13 @@ footer{
     list-style: none;
 }
 
-#inicio a{
+a {
     text-align: center;
     display: block;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: black;
     transition: 0.3s;
+    text-decoration: none;
 }
 #inicio a:hover {
     background-color: yellow;
@@ -167,13 +168,17 @@ footer ul{
     font-size: 1.5rem;
     color: white;
 }
-a{
+footer a {
+    color: white;
+    text-decoration: none;
+}
+#subir a{
     font-size: 2rem;
     color: black;
     transition: 0.3s;
     text-decoration: none;
 }
-a:hover {
+#subir a:hover {
     background-color: yellow;
     color: red;
 }
