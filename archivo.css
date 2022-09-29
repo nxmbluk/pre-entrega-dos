@@ -208,6 +208,7 @@ section div h3{
 @media (max-width: 767px) {
     #galeria {
         flex-direction: column;
-        justify-content: center;
+        justify-items: center;
+        
     }   
 }
