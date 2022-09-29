@@ -56,6 +56,7 @@ header img {
 }
 header ul{
     list-style: none;
+    text-decoration: none;
     display: flex;
     font-size: 2rem;
     gap: 2px;
@@ -165,6 +166,16 @@ footer ul{
     list-style: none;
     font-size: 1.5rem;
     color: white;
+}
+a{
+    font-size: 2rem;
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;
+}
+a:hover {
+    background-color: yellow;
+    color: red;
 }
 #sinopsis{
     background-color: beige;
